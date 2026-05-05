@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sertifikat - Divo Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .gradient-text { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link:hover { color: #3b82f6; transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <nav class="fixed top-0 w-full z-50 glass-card border-b">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl gradient-text">Divo Portfolio</span>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="nav-link">Tentang</a>
+                <a href="cv.html" class="nav-link">CV</a>
+                <a href="projects.html" class="nav-link">Karya</a>
+                <a href="awards.html" class="text-blue-600 font-bold underline decoration-2 underline-offset-4">Sertifikat</a>
+                <a href="reflection.html" class="nav-link">Refleksi</a>
+                <a href="contact.html" class="nav-link">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <i data-lucide="award" class="text-yellow-500"></i> Penghargaan & Sertifikat
+        </h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="p-6 bg-white rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center text-center hover:translate-y-[-5px] transition-transform">
+                <div class="w-16 h-16 bg-yellow-50 rounded-full flex items-center justify-center mb-4">
+                    <i data-lucide="medal" class="w-8 h-8 text-yellow-500"></i>
+                </div>
+                <h4 class="font-bold">Lulusan Terbaik Sman 45</h4>
+                <p class="text-sm text-slate-500 mt-1">Diberikan atas prestasi akademik yang konsisten selama masa studi.</p>
+                <span class="mt-4 text-xs font-bold text-slate-400 uppercase">Tahun 2023</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white py-8 border-t text-center text-slate-500 text-sm mt-auto">
+        <p>&copy; 2024 Christopher Divo Moses Siagian | Portofolio Digital.</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
