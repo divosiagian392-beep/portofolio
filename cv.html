@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Divo Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.3); }
+        .gradient-text { background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link:hover { color: #3b82f6; transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen flex flex-col">
+
+    <!-- Navigasi Utama -->
+    <nav class="fixed top-0 w-full z-50 glass-card border-b">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="font-bold text-xl gradient-text">Divo Portfolio</span>
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="nav-link">Tentang</a>
+                <a href="cv.html" class="text-blue-600 font-bold underline decoration-2 underline-offset-4">CV</a>
+                <a href="projects.html" class="nav-link">Karya</a>
+                <a href="awards.html" class="nav-link">Sertifikat</a>
+                <a href="reflection.html" class="nav-link">Refleksi</a>
+                <a href="contact.html" class="nav-link">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <i data-lucide="briefcase" class="text-blue-600"></i> Pengalaman & Pendidikan
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Section Pendidikan -->
+            <section>
+                <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                    <i data-lucide="graduation-cap" class="text-slate-400"></i> Pendidikan
+                </h3>
+                <div class="space-y-8 border-l-2 border-slate-200 ml-3">
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                        <span class="text-sm font-bold text-blue-600 uppercase">2019 - 2023</span>
+                        <h4 class="text-lg font-bold">SMAN 45</h4>
+                        <p class="text-slate-600">KELAS 11 </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Keahlian -->
+            <section>
+                <h3 class="text-xl font-semibold mb-6 flex items-center gap-2">
+                    <i data-lucide="star" class="text-slate-400"></i> Keahlian Utama
+                </h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-4 bg-white border rounded-xl shadow-sm">
+                        <p class="font-bold text-blue-600">Frontend</p>
+                        <p class="text-sm text-slate-500">React, Tailwind, HTML/CSS</p>
+                    </div>
+                    <div class="p-4 bg-white border rounded-xl shadow-sm">
+                        <p class="font-bold text-blue-600">Backend</p>
+                        <p class="text-sm text-slate-500">Node.js, PHP, MySQL</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-white py-8 border-t text-center text-slate-500 text-sm mt-auto">
+        <p>&copy; 2024 Christopher Divo Moses Siagian | Portofolio Digital.</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
